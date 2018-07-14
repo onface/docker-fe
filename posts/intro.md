@@ -55,7 +55,7 @@ docker run -it node:9-slim bash
 FROM onface/node-yarn-fis3:9-slim
 WORKDIR /app
 COPY . /app/
-    & yarn \
+RUN yarn install \
     & npm run online
 MAINTAINER youremail@domain.com
 ```
